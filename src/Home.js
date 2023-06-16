@@ -4,9 +4,10 @@ import withRoot from "./modules/withRoot";
 // components
 import NavbarView from "./modules/views/NavbarView";
 import ProductHero from "./modules/views/ProductHero";
-import ProductValues from "./modules/views/ProductValues";
-import ProductCategories from "./modules/views/ProductCategories";
-import ProductStats from "./modules/views/ProductStats";
+import SectionIntroduction from "./modules/views/SectionIntroduction";
+import SectionRules from "./modules/views/SectionRules";
+import SectionRosters from "./modules/views/SectionRosters";
+import SectionStats from "./modules/views/SectionStats";
 import ProductHowItWorks from "./modules/views/ProductHowItWorks";
 import ProductCTA from "./modules/views/ProductCTA";
 import ProductSmokingHero from "./modules/views/ProductSmokingHero";
@@ -16,9 +17,10 @@ const Home = () => (
   <Fragment>
     <NavbarView />
     <ProductHero />
-    <ProductValues />
-    <ProductCategories />
-    <ProductStats />
+    <SectionIntroduction />
+    <SectionRules />
+    <SectionRosters />
+    <SectionStats />
     <ProductHowItWorks />
     <ProductCTA />
     <ProductSmokingHero />
