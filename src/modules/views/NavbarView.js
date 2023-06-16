@@ -76,11 +76,11 @@ const NavbarView = ({ classes }) => {
               >
                   <MenuItem onClick={handleClose}>Home</MenuItem>
                   <MenuItem onClick={handleClose}>League Introduction</MenuItem>
+                  <MenuItem onClick={handleClose}>Rules</MenuItem>
                   <MenuItem onClick={handleClose}>Rosters 2023</MenuItem>
                   <MenuItem onClick={handleClose}>Stats</MenuItem>
                   <MenuItem onClick={handleClose}>Game Logs</MenuItem>
                   <MenuItem onClick={handleClose}>History</MenuItem>
-                  <MenuItem onClick={handleClose}>Rules</MenuItem>
                   <MenuItem onClick={handleClose}>Registration</MenuItem>
                   <MenuItem onClick={handleClose}>FAQ</MenuItem>
                   <MenuItem onClick={handleClose}>Contact Us</MenuItem>

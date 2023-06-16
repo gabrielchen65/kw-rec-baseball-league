@@ -5,6 +5,7 @@ import withRoot from "./modules/withRoot";
 import NavbarView from "./modules/views/NavbarView";
 import ProductHero from "./modules/views/ProductHero";
 import SectionIntroduction from "./modules/views/SectionIntroduction";
+import SectionHistory from "./modules/views/SectionHistory";
 import SectionRules from "./modules/views/SectionRules";
 import SectionRosters from "./modules/views/SectionRosters";
 import SectionStats from "./modules/views/SectionStats";
@@ -21,6 +22,7 @@ const Home = () => (
     <SectionRules />
     <SectionRosters />
     <SectionStats />
+    <SectionHistory />
     <ProductHowItWorks />
     <ProductCTA />
     <ProductSmokingHero />

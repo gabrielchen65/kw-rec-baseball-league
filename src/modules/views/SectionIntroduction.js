@@ -9,6 +9,8 @@ import adultRec from './adult_rec_baseball_game.jpeg'
 
 const styles = theme => ({
   root: {
+    marginTop: theme.spacing(10),
+    marginBottom: theme.spacing(0),
     display: "flex",
     overflow: "hidden",
     backgroundColor: theme.palette.secondary.light
@@ -68,9 +70,11 @@ function SectionIntroduction(props) {
             />
           </Grid>
           <Grid item sm={12} md={6}>
-            <Typography variant="h4" marked="center" className={classes.title} component="h2">
-            League Introduction
-            </Typography>
+            <div style={{textAlign: 'center'}}>
+              <Typography variant="h4" marked="center" className={classes.title} component="h2">
+              League Introduction
+              </Typography>
+            </div>
             <Typography variant="body">
               KW Rec Baseball offers a recreational brand of baseball to adult men and women living in Kitchener, Waterloo, Cambridge, and surrounding areas.<br/><br/>
               We play on full-sized baseball diamonds with grass infields and deep fences.<br/><br/>

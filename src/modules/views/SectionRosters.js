@@ -12,7 +12,7 @@ import dodgers from './dodgers.jpeg';
 const styles = theme => ({
   root: {
     marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(4)
+    marginBottom: theme.spacing(4),
   },
   images: {
     marginTop: theme.spacing(8),
@@ -95,25 +95,25 @@ function ProductCategories(props) {
       url:
       whiteSox,
       title: "White Sox",
-      width: "25%"
+      width: "50%"
     },
     {
       url:
         blueJays,
       title: "Blue Jays",
-      width: "25%"
+      width: "50%"
     },
     {
       url:
         dodgers,
       title: "Dodgers",
-      width: "25%"
+      width: "50%"
     },
     {
       url:
         expos,
       title: "Expos",
-      width: "25%"
+      width: "50%"
     },
   ];
 
