@@ -9,6 +9,8 @@ import SectionHistory from "./modules/views/SectionHistory";
 import SectionRules from "./modules/views/SectionRules";
 import SectionRosters from "./modules/views/SectionRosters";
 import SectionStats from "./modules/views/SectionStats";
+import SectionSchedule from "./modules/views/SectionSchedule";
+import SectionFAQ from "./modules/views/SectionFAQ";
 import ProductHowItWorks from "./modules/views/ProductHowItWorks";
 import ProductCTA from "./modules/views/ProductCTA";
 import ProductSmokingHero from "./modules/views/ProductSmokingHero";
@@ -22,10 +24,12 @@ const Home = () => (
     <SectionRules />
     <SectionRosters />
     <SectionStats />
+    <SectionSchedule />
+    <SectionFAQ />
     <SectionHistory />
-    <ProductHowItWorks />
+{/*     <ProductHowItWorks />
     <ProductCTA />
-    <ProductSmokingHero />
+    <ProductSmokingHero /> */}
     <AppFooter />
   </Fragment>
 );

@@ -4,16 +4,12 @@ import { withStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Container from "@material-ui/core/Container";
 import Typography from "../components/Typography";
-import whiteSox from './whiteSox.jpeg';
-import expos from './expos.webp';
-import blueJays from './blueJays.jpeg';
-import dodgers from './dodgers.jpeg';
-import { Link } from 'react-router-dom';
+import playoffGraph from './playoff-graph.jpeg';
 
 const styles = theme => ({
   root: {
     marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(4),
+    marginBottom: theme.spacing(4)
   },
   images: {
     marginTop: theme.spacing(8),
@@ -94,41 +90,22 @@ function ProductCategories(props) {
   const images = [
     {
       url:
-      whiteSox,
-      title: "White Sox",
-      width: "50%"
-    },
-    {
-      url:
-        blueJays,
-      title: "Blue Jays",
-      width: "50%"
-    },
-    {
-      url:
-        dodgers,
-      title: "Dodgers",
-      width: "50%"
-    },
-    {
-      url:
-        expos,
-      title: "Expos",
-      width: "50%"
+      playoffGraph,
+      title: "Season 2023",
+      width: "100%"
     },
   ];
 
   return (
     <Container className={classes.root} component="section">
       <Typography variant="h4" marked="center" align="center" component="h2">
-        Rosters 2023
+        Schedule and Scores
       </Typography>
       <div className={classes.images}>
         {images.map(image => (
           <ButtonBase
             key={image.title}
             className={classes.imageWrapper}
-            href="/rosters"
             style={{
               width: image.width
             }}

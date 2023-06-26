@@ -4,7 +4,6 @@ import { withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import Typography from "../components/Typography";
-import family from './family.jpg';
 import kwBat from './kw-rec-bat.png'
 
 const styles = theme => ({
@@ -15,21 +14,12 @@ const styles = theme => ({
     overflow: "hidden",
     backgroundColor: theme.palette.secondary.light
   },
-  containerColumn: {
-    marginTop: theme.spacing(0),
+  container: {
+    marginTop: theme.spacing(10),
     marginBottom: theme.spacing(0),
     display: "flex",
     position: "relative",
-    flexDirection: "column",
-    alignItems: "center"
-  },
-  containerRow: {
-    marginTop: theme.spacing(10),
-    marginBottom: theme.spacing(10),
-    display: "flex",
-    position: "relative",
-    flexDirection: "row",
-    alignItems: "center"
+    //alignItems: "center"
   },
   item: {
     display: "flex",
@@ -40,7 +30,7 @@ const styles = theme => ({
 
   image: {
     height: 'auto',
-    maxWidth: '50%',
+    maxWidth: '100%',
     marginTop: theme.spacing(4),
     marginBottom: theme.spacing(4)
   },
@@ -60,16 +50,16 @@ function SectionHistory(props) {
 
   return (
     <section className={classes.root}>
-      <Container maxWidth='lg'>
+      <Container maxWidth='lg' className={classes.container}>
         <Grid container spacing={4} >
           <Grid item md={3}>
             <img
                 src={kwBat}
                 className={classes.image}
-                alt="family event"
+                alt="kw bat legacy image"
             />
           </Grid>
-          <Grid item md={7}>
+          <Grid item md={9}>
             <div style={{textAlign: 'center'}}>
               <Typography variant="h4" marked="center" className={classes.title} component="h2">
               League History

@@ -9,7 +9,7 @@ import TextField from "../components/TextField";
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
-    backgroundColor: theme.palette.secondary.light
+    backgroundColor: theme.palette.secondary.dark
   },
   container: {
     marginTop: theme.spacing(8),

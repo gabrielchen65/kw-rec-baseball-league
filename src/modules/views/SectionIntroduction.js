@@ -9,19 +9,18 @@ import adultRec from './adult_rec_baseball_game.jpeg'
 
 const styles = theme => ({
   root: {
-    marginTop: theme.spacing(10),
+    marginTop: theme.spacing(0),
     marginBottom: theme.spacing(0),
     display: "flex",
     overflow: "hidden",
     backgroundColor: theme.palette.secondary.light
   },
-  containerColumn: {
-    marginTop: theme.spacing(0),
+  container: {
+    marginTop: theme.spacing(10),
     marginBottom: theme.spacing(0),
     display: "flex",
     position: "relative",
-    flexDirection: "column",
-    alignItems: "center"
+    //alignItems: "center"
   },
   containerRow: {
     marginTop: theme.spacing(10),
@@ -60,7 +59,7 @@ function SectionIntroduction(props) {
 
   return (
     <section className={classes.root}>
-      <Container maxWidth='lg'>
+      <Container maxWidth='lg' className={classes.container}>
         <Grid container spacing={4} >
           <Grid item sm={12} md={6}>
             <img
@@ -83,7 +82,7 @@ function SectionIntroduction(props) {
               Each team will play once a week throughout the summer for a total of 9 regular season games and 4 playoff games.
             </Typography>
           </Grid>
-          <Grid item sm={12} md={6}>
+          <Grid item sm={12} md={5}>
             <Typography variant='h6'>What To Expect</Typography>
             <Typography variant="body">
               <ul>
@@ -99,7 +98,7 @@ function SectionIntroduction(props) {
               </ul>
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+          <Grid item xs={12} sm={12} md={7}>
             <img
                   src={adultRec}
                   className={classes.image}

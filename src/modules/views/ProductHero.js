@@ -39,7 +39,7 @@ function ProductHero(props) {
       {/* Increase the network loading priority of the background image. */}
       <img style={{ display: "none" }} src={backgroundImage} alt="" />
       <Typography color="inherit" align="center" variant="h2" marked="center">
-        Enjoy the baseball <br/> Throughtout the Summer in KW
+        Enjoy the K-W <br/> Baseball Summer
       </Typography>
       <p>A league to bring your family to</p>
       <br />

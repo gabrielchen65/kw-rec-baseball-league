@@ -13,7 +13,7 @@ const styles = theme => ({
     display: "flex",
     overflow: "hidden",
     marginTop: theme.spacing(10),
-    marginBottom: theme.spacing(10),
+    marginBottom: theme.spacing(0),
     //backgroundColor: theme.palette.secondary.light
   },
   container: {
@@ -68,7 +68,7 @@ function SectionIntroduction(props) {
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
             <div style={{textAlign: 'center'}}>
               <Typography variant="h4" marked="center" component="h2" className={classes.title} >
-                League Rules
+                FAQ
               </Typography>
             </div>
           </Grid>
@@ -145,42 +145,6 @@ function SectionIntroduction(props) {
                   </Typography>
                   <Typography variant="body" gutterBottom>
                     metal bats are allowed, as well as composite bats; bats should be baseball bats, not softball bats
-                  </Typography>
-                </div>
-              </Card>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Card className={classes.card}>
-                <div className={classes.item}>
-                  <Typography variant="h6" className={classes.title}>
-                   Player Bats
-                  </Typography>
-                  <Typography variant="body" gutterBottom>
-                    non-wood bats that have not been supplied by KWRB (eg. owned by a player) must be BBCOR or BESR certified
-                  </Typography>
-                </div>
-              </Card>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Card className={classes.card}>
-                <div className={classes.item}>
-                  <Typography variant="h6" className={classes.title}>
-                    Pitchers
-                  </Typography>
-                  <Typography variant="body" gutterBottom>
-                    any individual pitcher will be limited to pitching a maximum of 4 innings per game
-                  </Typography>
-                </div>
-              </Card>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Card className={classes.card}>
-                <div className={classes.item}>
-                  <Typography variant="h6" className={classes.title}>
-                    No Shorts
-                  </Typography>
-                  <Typography variant="body" gutterBottom>
-                    long pants are required
                   </Typography>
                 </div>
               </Card>
