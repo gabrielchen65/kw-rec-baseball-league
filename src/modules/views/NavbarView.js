@@ -23,7 +23,6 @@ const styles = theme => ({
   },
   leftLinkActive: {
     color: theme.palette.common.white,
-    TextDecoder: 'none',
   },
   right: {
     flex: 1,
@@ -34,19 +33,16 @@ const styles = theme => ({
     fontSize: 16,
     color: theme.palette.common.white,
     marginLeft: theme.spacing(3),
-    TextDecoder: 'none',
   },
   rightLink: {
     fontSize: 16,
     color: theme.palette.common.white,
     marginLeft: theme.spacing(3),
-    TextDecoder: 'none',
   },
   rightLinkActive: {
     fontSize: 16,
     color: theme.palette.secondary.dark,
     marginLeft: theme.spacing(3),
-    TextDecoder: 'none',
   },
   linkSecondary: {
     color: theme.palette.secondary.main
@@ -77,14 +73,14 @@ const NavbarView = ({ classes }) => {
           >
             {"K-W Recreational Baseball"}
           </Link>
-          <NavLink
+{/*           <NavLink
             className={({isActive}) => 
                 isActive? classes.rightLinkActive : classes.rightLink}
             to="/"
             end
           >
             {"K-W Recreational Baseball"}
-          </NavLink>
+          </NavLink> */}
           <div className={classes.right}>
             <Link
               color="inherit"
@@ -95,7 +91,16 @@ const NavbarView = ({ classes }) => {
             >
               {"Rosters"}
             </Link>
-            <NavLink
+            <Link
+              color="inherit"
+              variant="h6"
+              underline="none"
+              className={classes.rightLink}
+              href="/schedule"
+            >
+              {"Schedule"}
+            </Link>
+{/*             <NavLink
               className={({isActive}) => 
                 isActive? classes.rightLinkActive : classes.rightLink}
               to="/rosters"
@@ -108,8 +113,8 @@ const NavbarView = ({ classes }) => {
               to="/schedule"
             >
               {"ScheduleNV "}
-            </NavLink>
-            <div>
+            </NavLink> */}
+{/*             <div>
               <Button className={classes.rightLink} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                   Menu
               </Button>
@@ -132,7 +137,7 @@ const NavbarView = ({ classes }) => {
                   <MenuItem onClick={handleClose}>Contact Us</MenuItem>
                   <MenuItem onClick={handleClose}>Links</MenuItem>
               </Menu>
-            </div>
+            </div> */}
 
             {/* <Link
               variant="h6"
